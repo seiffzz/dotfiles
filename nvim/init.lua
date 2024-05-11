@@ -481,6 +481,7 @@ require("lazy").setup({
 				pyright = {},
 				tsserver = {},
 				tailwindcss = {},
+				gopls = {},
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes = { ...},
