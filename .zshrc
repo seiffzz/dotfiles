@@ -102,6 +102,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 alias vim=nvim
+alias python=python3
 
 # pnpm
 export PNPM_HOME="/home/seiffzz/.local/share/pnpm"
@@ -110,8 +111,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 export PATH="$PATH:~/.local/bin"
 export PATH=$PATH:/usr/local/go/bin

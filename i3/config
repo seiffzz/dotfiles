@@ -201,6 +201,10 @@ bar {
         tray_output primary
 }
 
+# Audo switching
+bindsym $mod+Mod1+h exec wpctl set-default 91
+bindsym $mod+Mod1+s exec wpctl set-default 41
+
 # Suspend
 bindsym $mod+Shift+period exec systemctl suspend
 
