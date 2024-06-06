@@ -27,7 +27,7 @@ exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/1.jpg
 
 # Styling
 for_window [all] border pixel 4
-# gaps inner 5px
+gaps inner 5px
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
@@ -56,7 +56,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-# tiling_drag modifier titlebar
+tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty

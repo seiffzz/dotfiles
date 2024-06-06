@@ -81,9 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Neovim
-export PATH="$PATH:/opt/nvim-linux64/bin"
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -110,7 +107,9 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
+# Neovim
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
 export PATH="$PATH:~/.local/bin"
 export PATH=$PATH:/usr/local/go/bin
