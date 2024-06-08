@@ -1,9 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -113,3 +111,15 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 export PATH="$PATH:~/.local/bin"
 export PATH=$PATH:/usr/local/go/bin
+
+# tmux-sessionizer
+addToPathFront() {
+    if [[ "$PATH" != *"$1"* ]]; then
+        export PATH=$1:$PATH
+    fi
+}
+
+bindkey -s ^f "tmux-sessionizer\n"
+
+addToPathFront $HOME/.local/bin
+
