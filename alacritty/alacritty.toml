@@ -9,7 +9,7 @@ blur = true
 decorations = "Buttonless"
 
 [font]
-normal.family = "Meslo LGM NERD FONT"
+normal.family = "MesloLGM Nerd Font"
 
 #regular
 size = 12
