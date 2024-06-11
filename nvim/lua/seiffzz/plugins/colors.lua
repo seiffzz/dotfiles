@@ -4,7 +4,6 @@ function ColorMyPencils(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-
 end
 
 return {
@@ -23,10 +22,12 @@ return {
                     comments = { italic = false },
                     keywords = { italic = false },
                     -- Background styles. Can be "dark", "transparent" or "normal"
-                    sidebars = "dark", -- style for sidebars, see below
-                    floats = "dark", -- style for floating windows
+                    sidebars = "transparent", -- style for sidebars, see below
+                    floats = "transparent", -- style for floating windows
                 },
             })
+            vim.cmd("colorscheme tokyonight")
+            ColorMyPencils("tokyonight")
         end
     },
 
@@ -36,11 +37,12 @@ return {
         config = function()
             require('rose-pine').setup({
                 disable_background = true,
+                transparent = true
             })
 
-            vim.cmd("colorscheme rose-pine")
+            -- vim.cmd("colorscheme rose-pine")
 
-            ColorMyPencils()
+            -- ColorMyPencils()
         end
     },
 
