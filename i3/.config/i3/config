@@ -197,7 +197,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status --config ~/.config/i3status/.i3status.conf
-        tray_output primary
+        # tray_output primary
 }
 
 # Audo switching
