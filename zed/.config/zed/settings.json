@@ -1,0 +1,51 @@
+{
+  // UI
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "theme": "Gruvbox Dark Hard",
+  "buffer_font_family": "MesloLGS Nerd Font",
+  "ui_font_family": "MesloLGS Nerd Font",
+  "terminal": {
+    "font_size": 15,
+    "font_family": "MesloLGS Nerd Font",
+    "copy_on_select": true
+  },
+  "scrollbar": { "show": "never" },
+  "cursor_blink": false,
+  "project_panel": {
+    "dock": "right",
+    "scrollbar": { "show": "never" }
+  },
+  "wrap_guides": [80],
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "relative_line_numbers": true,
+
+  // AI
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2"
+  },
+
+  //Code
+  "vim_mode": true,
+  "use_autoclose": true,
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true
+      }
+    }
+  }
+}
