@@ -4,6 +4,9 @@
 # oh my zsh
 export ZSH="$HOME/.oh-my-zsh"
 
+# Starship
+# eval "$(starship init zsh)"
+
 # neovim
 export NEOVIM_INSTALL="$HOME/nvim"
 export PATH="$NEOVIM_INSTALL/bin:$PATH"
@@ -24,8 +27,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 # Config
-
-ZSH_THEME="headline"
+TERM="tmux-256color"
+ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # Aliases

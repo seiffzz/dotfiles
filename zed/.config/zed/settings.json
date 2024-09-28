@@ -1,9 +1,9 @@
 {
   // UI
+  "theme": "Rosé Pine",
   "features": {
     "inline_completion_provider": "none"
   },
-  "theme": "Gruvbox Dark Hard",
   "buffer_font_family": "MesloLGS Nerd Font",
   "ui_font_family": "MesloLGS Nerd Font",
   "terminal": {

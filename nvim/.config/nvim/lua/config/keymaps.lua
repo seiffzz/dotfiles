@@ -1,39 +1,30 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
---
 local keymap = vim.keymap
-local opts = { noremap = true, silent = true }
 
--- netrw
-keymap.set("n", "<leader>pv", vim.cmd.Ex)
+keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>', { desc = 'Clear highlights on search' })
+keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
--- exit insert mode
-keymap.set("i", "jk", "<Esc>")
+keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
-keymap.del({ "n", "i", "v" }, "<A-k>")
-keymap.del("n", "<C-Left>")
-keymap.del("n", "<C-Down>")
-keymap.del("n", "<C-Up>")
-keymap.del("n", "<C-Right>")
+keymap.set('n', '<M-h>', '<C-w><5', { desc = 'Decrese window width by 1' })
+keymap.set('n', '<M-l>', '<C-w>>5', { desc = 'Increase window width by 1' })
 
-keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", { silent = true })
-keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", { silent = true })
-keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { silent = true })
-keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { silent = true })
-keymap.set("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", { silent = true })
-keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { silent = true })
+-- Disable arrow keys in normal mode
+keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
+keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
+keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
+keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
-keymap.set("n", "<M-h>", '<Cmd>lua require("tmux").resize_left()<CR>', { silent = true })
-keymap.set("n", "<M-j>", '<Cmd>lua require("tmux").resize_bottom()<CR>', { silent = true })
-keymap.set("n", "<M-k>", '<Cmd>lua require("tmux").resize_top()<CR>', { silent = true })
-keymap.set("n", "<M-l>", '<Cmd>lua require("tmux").resize_right()<CR>', { silent = true })
+keymap.set('i', 'jk', '<Esc>', { desc = 'Exit normal mode' })
 
--- Split windows
-keymap.set("n", "ss", ":vsplit<Return>", opts)
-keymap.set("n", "sv", ":split<Return>", opts)
+keymap.set('n', '<leader>pv', '<cmd>Oil --float<CR>', { desc = 'Open oil in current directory' })
+keymap.set('n', '<leader>to', '<cmd>tabnew<CR>', { desc = '[T]ab [O]pen' })
+keymap.set('n', '<leader>tn', '<cmd>tabnext<CR>', { desc = '[T]ab [N]ext' })
+keymap.set('n', '<leader>tp', '<cmd>tabprev<CR>', { desc = '[T]ab [P]revious' })
+keymap.set('n', '<leader>tc', '<cmd>tabclose<CR>', { desc = '[T]ab [C]lose' })
 
--- Tabs
-keymap.set("n", "te", ":tabedit", opts)
-keymap.set("n", "<tab>", ":tabnext<Return>", opts)
-keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
+keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
+keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
