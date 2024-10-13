@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # eval "$(starship init zsh)"
 
 # neovim
-export NEOVIM_INSTALL="$HOME/nvim"
+export NEOVIM_INSTALL="/opt/nvim-linux64"
 export PATH="$NEOVIM_INSTALL/bin:$PATH"
 
 # pnpm
@@ -23,7 +23,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 # Config
@@ -51,5 +51,5 @@ addToPathFront $HOME/.local/bin
 source $ZSH/oh-my-zsh.sh
 
 # fzf
-source <(fzf --zsh)
+# source <(fzf --zsh)
 

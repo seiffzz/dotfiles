@@ -7,8 +7,8 @@ local config = wezterm.config_builder()
 config.term = "wezterm"
 
 -- FONT
-config.font = wezterm.font("DankMono Nerd Font", { weight = "Bold" })
-config.font_size = 22
+config.font = wezterm.font("DankMono Nerd Font")
+config.font_size = 16
 
 -- UI
 config.enable_tab_bar = false
