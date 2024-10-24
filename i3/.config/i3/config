@@ -203,8 +203,8 @@ bar {
 }
 
 # Audo switching
-bindsym $mod+Mod1+h exec pactl set-default 442
-bindsym $mod+Mod1+s exec pactl set-default 444
+bindsym $mod+Mod1+h exec pactl set-default-sink 62
+bindsym $mod+Mod1+s exec pactl set-default-sink 56
 
 # Suspend
 bindsym $mod+Shift+period exec systemctl suspend

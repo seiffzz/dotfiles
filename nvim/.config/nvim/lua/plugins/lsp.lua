@@ -85,6 +85,7 @@ return {
       local servers = {
         pyright = {},
         ts_ls = {},
+        marksman = {},
         lua_ls = {
           settings = {
             Lua = {
