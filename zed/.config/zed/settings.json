@@ -1,51 +1,48 @@
 {
-  // UI
-  "theme": "Rosé Pine",
-  "features": {
-    "inline_completion_provider": "none"
+  //[UI]------------------------------------------------------------------------
+  "icon_theme": "Catppuccin Mocha",
+  "theme": "Catppuccin Mocha",
+  "cursor_blink": false,
+  "show_user_picture": false,
+  "scrollbar": { "show": "never" },
+  "outline_panel": { "button": false },
+  "notification_panel": { "button": false },
+  "collaboration_panel": { "button": false },
+  "assistant": { "version": "2", "button": false },
+  "gutter": { "runnables": false, "code_actions": false },
+  "project_panel": { "dock": "right", "scrollbar": { "show": "never" } },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false
   },
-  "buffer_font_family": "MesloLGS Nerd Font",
-  "ui_font_family": "MesloLGS Nerd Font",
   "terminal": {
-    "font_size": 15,
-    "font_family": "MesloLGS Nerd Font",
+    "button": false,
+    "font_family": "JetBrains Mono",
     "copy_on_select": true
   },
-  "scrollbar": { "show": "never" },
-  "cursor_blink": false,
-  "project_panel": {
-    "dock": "right",
-    "scrollbar": { "show": "never" }
-  },
+  //----------------------------------------------------------------------------
+
+  //[EDITOR]--------------------------------------------------------------------
   "wrap_guides": [80],
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "base_keymap": null,
+  "show_whitespaces": "all",
+  "autosave": "on_focus_change",
+  "preferred_line_length": 100,
   "relative_line_numbers": true,
+  "ui_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrains Mono",
+  "pane_split_direction_vertical": "right",
+  //----------------------------------------------------------------------------
 
-  // AI
-  "assistant": {
-    "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-20240620"
-    },
-    "version": "2"
-  },
-
-  //Code
+  //[VIM]-----------------------------------------------------------------------
   "vim_mode": true,
-  "use_autoclose": true,
-  "languages": {
-    "TypeScript": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll.eslint": true
-      }
-    },
-    "TSX": {
-      "code_actions_on_format": {
-        "source.organizeImports": true,
-        "source.fixAll.eslint": true
-      }
-    }
+  "vim": { "use_system_clipboard": "always" },
+  //----------------------------------------------------------------------------
+
+  //[FEATURES]------------------------------------------------------------------
+  "features": {
+    "edit_prediction_provider": "zed"
   }
+  //----------------------------------------------------------------------------
 }
