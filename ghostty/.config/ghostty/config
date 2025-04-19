@@ -1,1 +1,38 @@
-theme = catppuccin-mocha
+# [Theme]--------------------
+theme = dark:rose-pine-moon, light:rose-pine-dawn
+# theme = dark:catppuccin-mocha,light:catppuccin-latte
+# background-opacity = 0.7
+# background-blur = true
+#---------------------------
+
+
+#[Font]---------------------
+font-size = 16
+font-family = JetBrains Mono
+#---------------------------
+
+#[UI]-----------------------
+cursor-style = block
+cursor-style-blink = false
+macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = hidden
+window-padding-x = 20
+window-padding-y = 20
+#---------------------------
+
+shell-integration-features = no-cursor
+mouse-hide-while-typing = true
+macos-option-as-alt = true
+maximize = true
+
+
+#[Keymaps]------------------
+keybind = ctrl+b>shift+5=new_split:right
+keybind = ctrl+b>'=new_split:down
+keybind = ctrl+b>h=goto_split:left
+keybind = ctrl+b>l=goto_split:right
+keybind = ctrl+b>j=goto_split:down
+keybind = ctrl+b>k=goto_split:up
+keybind = ctrl+b>z=toggle_split_zoom
+keybind = ctrl+b>x=close_surface
+#---------------------------

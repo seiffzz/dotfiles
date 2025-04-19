@@ -1,7 +1,12 @@
 {
   //[UI]------------------------------------------------------------------------
+  "languages": {
+    "TypeScript": {
+      "show_edit_predictions": true
+    }
+  },
   "icon_theme": "Catppuccin Mocha",
-  "theme": "Catppuccin Mocha",
+  "theme": { "mode": "system", "dark": "Catppuccin Mocha", "light": "Catppuccin Latte" },
   "cursor_blink": false,
   "show_user_picture": false,
   "scrollbar": { "show": "never" },
@@ -9,7 +14,7 @@
   "notification_panel": { "button": false },
   "collaboration_panel": { "button": false },
   "assistant": { "version": "2", "button": false },
-  "gutter": { "runnables": false, "code_actions": false },
+  "gutter": { "runnables": false, "code_actions": false, "folds": false },
   "project_panel": { "dock": "right", "scrollbar": { "show": "never" } },
   "toolbar": {
     "breadcrumbs": false,
@@ -31,8 +36,10 @@
   "preferred_line_length": 100,
   "relative_line_numbers": true,
   "ui_font_family": "JetBrains Mono",
+  "buffer_font_size": 16,
   "buffer_font_family": "JetBrains Mono",
   "pane_split_direction_vertical": "right",
+  "restore_on_startup": "last_session",
   //----------------------------------------------------------------------------
 
   //[VIM]-----------------------------------------------------------------------

@@ -1,0 +1,8 @@
+[*.lua]
+indent_tyle = space
+indent_size = 2
+max_line_length = 80
+
+[*.ts]
+indent_tyle = space
+indent_size = 2
