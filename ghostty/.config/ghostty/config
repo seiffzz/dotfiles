@@ -1,8 +1,9 @@
 # [Theme]--------------------
 theme = dark:rose-pine-moon, light:rose-pine-dawn
 # theme = dark:catppuccin-mocha,light:catppuccin-latte
-# background-opacity = 0.7
-# background-blur = true
+# theme = dark:tokyonight_night, light:tokyonight-day
+background-opacity = 0.0
+background-blur = true
 #---------------------------
 
 
@@ -24,15 +25,3 @@ shell-integration-features = no-cursor
 mouse-hide-while-typing = true
 macos-option-as-alt = true
 maximize = true
-
-
-#[Keymaps]------------------
-keybind = ctrl+b>shift+5=new_split:right
-keybind = ctrl+b>'=new_split:down
-keybind = ctrl+b>h=goto_split:left
-keybind = ctrl+b>l=goto_split:right
-keybind = ctrl+b>j=goto_split:down
-keybind = ctrl+b>k=goto_split:up
-keybind = ctrl+b>z=toggle_split_zoom
-keybind = ctrl+b>x=close_surface
-#---------------------------
