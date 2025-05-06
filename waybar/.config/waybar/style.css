@@ -1,0 +1,23 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Berkeley Mono;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(0,0,0,0);
+    color: #ffffff; 
+}
+
+#clock {
+	padding-right: 5px;
+}
+
+#workspaces {
+}
+
+#workspaces button.active {
+	color: #ffffff;
+}

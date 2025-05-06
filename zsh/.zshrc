@@ -91,9 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-# Custom Keymaps
-bindkey -s "^f" "find ~/ ~/personal ~/work -mindepth 1 -maxdepth 1 -type d | fzf\n"
-
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
@@ -107,35 +104,3 @@ bindkey -s "^f" "find ~/ ~/personal ~/work -mindepth 1 -maxdepth 1 -type d | fzf
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias v=nvim
-
-
-
-# CUSTOM SCRIPTS
-# Function to check macOS appearance
-get_macos_appearance() {
-  # Read the global preference for AppleInterfaceStyle
-  # If it exists and is "Dark", we're in dark mode. Otherwise, light mode.
-  if [[ "$(defaults read -g AppleInterfaceStyle 2>/dev/null)" == "Dark" ]]; then
-    echo "dark"
-  else
-    echo "light"
-  fi
-}
-
-# Example usage in .zshrc
-SYSTEM_APPEARANCE=$(get_macos_appearance)
-
-if [[ "$SYSTEM_APPEARANCE" == "dark" ]]; then
-  export FZF_DEFAULT_OPTS="--color=dark"
-else
-  export FZF_DEFAULT_OPTS="--color=light"
-fi
-
-# pnpm
-export PNPM_HOME="/Users/seiffzz/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
