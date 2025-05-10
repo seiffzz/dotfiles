@@ -1,3 +1,4 @@
 return {
-	dir = "~/personal/projects/smartfolds.nvim",
+	dir = "~/projects/smartfolds.nvim",
+	enabled = false
 }
