@@ -1,14 +1,14 @@
 return {
 	{
 		"catppuccin/nvim",
-		enabled = false,
+		enabled = true,
 		name = "catppuccin",
 		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
 				flavour = "auto",
 				term_colors = true,
-				transparent_background = false,
+				transparent_background = true,
 				background = {
 					light = "latte",
 					dark = "mocha",
@@ -19,7 +19,7 @@ return {
 	},
 	{
 		"rose-pine/neovim",
-		enabled = true,
+		enabled = false,
 		name = "rose-pine",
 		priority = 1000,
 		config = function()

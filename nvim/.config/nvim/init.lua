@@ -36,6 +36,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")             -- Move selected area d
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")             -- Move selected area up
 vim.keymap.set("x", "<leader>p", [["_dP]])               -- Paste & forget
 vim.keymap.set("n", "<Esc><Esc>", "<CMD>nohlsearch<CR>") -- Clear search highlights
+vim.keymap.set("n", "pv", "<CMD>Oil --float<CR>")        -- Clear search highlights
 
 -- autocmds
 vim.api.nvim_create_autocmd("TextYankPost", {
